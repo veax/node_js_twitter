@@ -1,0 +1,13 @@
+if tweets
+  each tw in tweets
+    div(class='card tweet-element')
+      div(class='card-body d-flex flex-column')
+        div(class='d-flex flex-row justify-content-center')
+          img(height='30' class='pr-2' src=tw.author.avatar)
+          span(class='flex-fill')=tw.author.userName
+          if editable && tw.author._id.toString() === currentUser._id.toString()
+            div(class='d-flex flex-row justify-content-center')
+              a(class='fas fa-edit pr-2 text-success' href='/tweets/edit/' + tw._id)
+              i(class='fas fa-minus-circle text-danger pointer-cursor' tweetid=tw._id)
+        div= tw.content
+

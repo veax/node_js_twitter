@@ -1,0 +1,92 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.content {
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.profile-container {
+  width: 30%;
+  max-width: 300px;
+  color: #657786;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.img-fluid {
+  max-height: 100px;
+}
+
+.btn-tweet {
+  border-radius: 30px;
+}
+
+.b {
+  border: 1px solid red;
+}
+
+.b1 {
+  border: 1px solid green;
+}
+
+.tweet-element {
+  border-radius: 0px;
+  font-size: 0.9rem;
+  border: none;
+  border-top: 1px solid #ddd
+}
+
+.tweet-element:first-child {
+  border-top: none;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+#search-menu-container{
+  position: relative;
+}
+
+.search-menu{
+  position: absolute;
+  background-color: white;
+  top: 20px;
+  left: 0px;
+  width: 300px;
+  min-height: 200px;
+  z-index: 1;
+  box-shadow: 0 1px 2px 0 #ddd;
+}
+
+.search-menu-item{
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background .5s;
+}
+
+.search-menu-item:hover{
+  background: #eee;
+  transition: background .5s;
+}
+
+.btn-follow{
+  color: #007bff;
+  border-radius: 30px;
+  border-width: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-follow:hover{
+  color: white;
+}
+
+.btn-unfollow{
+  border-radius: 30px;
+  font-weight: bold;
+}
